@@ -17,7 +17,7 @@ export class FileUploadService {
       const uploadDir = process.env.NODE_ENV === 'production' ? 'uploads' : '../uploads';
       
       // Create the full path for the upload directory
-      const fullPath = path.join(__dirname, '..', 'dist', uploadDir);
+      const fullPath = path.join(__dirname, '..', uploadDir);
       
       // Ensure the directory exists, if not, create it
       if (!fs.existsSync(fullPath)) {
